@@ -6,10 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\RKG_bg</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\SplashTimer_Obj</object>
+  </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\SplashScreen_0</room>
+    <room>rooms\MainMenu_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
