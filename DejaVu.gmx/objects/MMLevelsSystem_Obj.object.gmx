@@ -11,47 +11,90 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>0</kind>
-            <string>90</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>mx1=0;
+my1=mouse_y;
+curWrldPkg = 1;
+targPos = 16;
+
+BackButton_Obj.image_xscale = .35;
+BackButton_Obj.image_yscale = .35;
+BackButton_Obj.x = view_xview[0]+13;
+BackButton_Obj.y = view_yview[0]+9;
+</string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>MainMenu_1</room>
+            <kind>1</kind>
+            <string>if(view_xview[0] &lt; targPos)
+{
+    view_xview[0]+=8;
+    BackButton_Obj.x = view_xview[0]+13;
+    BackButton_Obj.y = view_yview[0]+9;
+}
+else if(view_xview[0] &gt; targPos)
+{
+    view_xview[0]-=8;
+    BackButton_Obj.x = view_xview[0]+13;
+    BackButton_Obj.y = view_yview[0]+9;
+}
+
+if(mouse_check_button_pressed(mb_left))
+{
+    mx1=mouse_x;
+    my1=mouse_y;
+}
+
+if(mouse_check_button_released(mb_left))
+{
+    if(mouse_x&lt;mx1) //A left swipe
+    {
+        if(curWrldPkg&lt;6) //Can swipe left
+        {
+            curWrldPkg++;
+            targPos+=160;
+        }
+    }
+    if(mouse_x&gt;mx1) //A right swipe
+    {
+        if(curWrldPkg&gt;1) //Can swipe left
+        {
+            curWrldPkg--;
+            targPos-=160;
+        }
+    }
+}
+</string>
           </argument>
         </arguments>
       </action>

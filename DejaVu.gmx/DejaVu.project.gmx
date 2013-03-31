@@ -5,17 +5,75 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\Play_Spr</sprite>
+    <sprite>sprites\Instructions_Spr</sprite>
+    <sprite>sprites\Settings_Spr</sprite>
+    <sprite>sprites\Wrld1Pkg_Spr</sprite>
+    <sprite>sprites\Wrld2Pkg_Spr</sprite>
+    <sprite>sprites\Wrld3Pkg_Spr</sprite>
+    <sprite>sprites\Wrld4Pkg_Spr</sprite>
+    <sprite>sprites\Wrld5Pkg_Spr</sprite>
+    <sprite>sprites\Wrld6Pkg_Spr</sprite>
+    <sprite>sprites\BackButton_Spr</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\RKG_bg</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\SplashTimer_Obj</object>
+    <object>objects\Play_Obj</object>
+    <object>objects\Instructions_Obj</object>
+    <object>objects\Settings_Obj</object>
+    <object>objects\GlobalSystem_Obj</object>
+    <object>objects\MainMenuSystem_Obj</object>
+    <object>objects\MMLevelsSystem_Obj</object>
+    <object>objects\Wrld1Pkg_Obj</object>
+    <object>objects\Wrld2Pkg_Obj</object>
+    <object>objects\Wrld3Pkg_Obj</object>
+    <object>objects\Wrld4Pkg_Obj</object>
+    <object>objects\Wrld5Pkg_Obj</object>
+    <object>objects\Wrld6Pkg_Obj</object>
+    <object>objects\BackButton_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\SplashScreen_0</room>
     <room>rooms\MainMenu_1</room>
+    <room>rooms\MMWorlds_2</room>
+    <room>rooms\MMLevels_3</room>
+    <room>rooms\MMInstructions_4</room>
+    <room>rooms\MMSettings_5</room>
+    <room>rooms\W1_1_6</room>
+    <room>rooms\W1_2_7</room>
+    <room>rooms\W1_3_8</room>
+    <room>rooms\W1_4_9</room>
+    <room>rooms\W1_5_10</room>
+    <room>rooms\W2_1_11</room>
+    <room>rooms\W2_2_12</room>
+    <room>rooms\W2_3_13</room>
+    <room>rooms\W2_4_14</room>
+    <room>rooms\W2_5_15</room>
+    <room>rooms\W3_1_16</room>
+    <room>rooms\W3_2_17</room>
+    <room>rooms\W3_3_18</room>
+    <room>rooms\W3_4_19</room>
+    <room>rooms\W3_5_20</room>
+    <room>rooms\W4_1_21</room>
+    <room>rooms\W4_2_22</room>
+    <room>rooms\W4_3_23</room>
+    <room>rooms\W4_4_24</room>
+    <room>rooms\W4_5_25</room>
+    <room>rooms\W5_1_26</room>
+    <room>rooms\W5_2_27</room>
+    <room>rooms\W5_3_28</room>
+    <room>rooms\W5_4_29</room>
+    <room>rooms\W5_5_30</room>
+    <room>rooms\W6_1_31</room>
+    <room>rooms\W6_2_32</room>
+    <room>rooms\W6_3_33</room>
+    <room>rooms\W6_4_34</room>
+    <room>rooms\W6_5_35</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
